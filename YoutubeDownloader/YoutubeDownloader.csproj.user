@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>https://www.youtube.com/watch%3fv=HzbcnnwqfhQ&amp;list=PLwGpaCzqVIFJNaUrW6mIr1vkoJv85lVug&amp;index=3</StartArguments>
+  </PropertyGroup>
+</Project>

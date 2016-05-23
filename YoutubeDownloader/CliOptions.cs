@@ -10,17 +10,17 @@ namespace YoutubeDownloader
 {
 	class CliOptions
 	{
-		[ValueOption(0)]
-		public string YouTubeUrl { get; set; }
+		[ValueList(typeof(List<string>))]
+		public IList<String> YouTubeUrls { get; set; }
 
-		[ValueOption(1)]
-		public string DestFile { get; set; }
+		[Option('v')]
+		public bool Verbose { get; set; }
 
 		[HelpOption]
 		public string GetUsage()
 		{
 			return
-				"YoutubeDownloader <url> <dest>\n";
+				"YoutubeDownloader (-v) [urls]\n";
 		}
 	}
 }
